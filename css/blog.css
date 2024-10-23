@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    margin: 20px;
+    margin-block: 5rem;
+}
+
+.blog-posts {
+    flex: 3;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.post h2 {
+    color: #007bff;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.sidebar h2 {
+    color: #007bff;
+}
+
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

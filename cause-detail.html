@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cause Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cause-details.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <h1>Raise a child Initiative</h1>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about-us.html">About Us</a></li>
+              <li><a href="/ourcauses.html">Our Causes</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="featured-cause-item">
+      <div class="featured-description">
+        <h1 id="cause-title">Cause Title</h1>
+        <p id="cause-description">Cause description will go here...</p>
+        <a href="/donate.html" class="donation-btn">Donate Now</a>
+      </div>
+
+      <div class="featured-cause-detail-container">
+        
+        <div class="cause-img-div">
+
+            <img id="cause-image" src="" alt="Cause Image" />
+        </div>
+        <p id="category"></p>
+
+        <div class="custom-progress-wrap">
+            <span class="caption" ></span>
+            <div class="custom-progress-inner">
+              <div class="custom-progress" id="progress-percentage"> <span id="progress-text">complete</span></div>
+            </div>
+          </div>
+
+        <div id="cause-donation-info">
+          <strong>Amount Donated: </strong><span id="donation-amount">$0</span>
+        </div>
+       
+    
+        <div id="donor-info">
+          <strong>Donor: </strong><span id="donor-name"></span>
+        </div>
+      
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

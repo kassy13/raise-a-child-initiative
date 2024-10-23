@@ -1,0 +1,103 @@
+:root {
+  --primary: rgb(0, 47, 0);
+  --secondary: rgb(6, 4, 57);
+  --tertiary: rgb(0, 180, 0);
+  --tertiary-dark: rgb(0, 134, 0);
+}
+
+.featured-cause-item {
+  width: 100%;
+  margin-top: 80px;
+  padding-block: 3rem;
+  padding-inline: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  position: relative;
+}
+.featured-description {
+  width: 60%;
+}
+.featured-description p{
+   padding-bottom: 3rem;
+  }
+
+.featured-cause-detail-container {
+  width: 40%;
+}
+.cause-img-div {
+  width: 100%;
+  /* height: 60%; */
+  /* background-color: fuchsia; */
+}
+.cause-img-div img {
+  width: 100%;
+  object-fit: cover;
+}
+.custom-progress-wrap {
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  #progress-text{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .custom-progress-inner {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    position: relative;
+    height: 10px;
+  }
+  
+  .custom-progress {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .donation-btn {
+    /* width: 100%; */
+    padding: 15px;
+    background-color: var(--tertiary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+  }
+  
+  .donation-btn:hover {
+    background-color: var(--secondary);
+  }
+  #category{
+    display: inline;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: 48px;
+    color: white;
+    
+  }
+  .school {
+    background-color: #e74c3c;
+  }
+  
+  .health {
+    background-color: #3498db;
+  }
+  
+ .livelihood {
+    background-color: #f1c40f;
+  }
+  .education {
+    background-color: var(--tertiary);
+  }.disaster {
+    background-color: black;
+  }

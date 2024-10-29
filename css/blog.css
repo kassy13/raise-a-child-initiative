@@ -1,126 +1,159 @@
-/* main {
-    display: flex;
-    margin: 20px;
-    margin-block: 5rem;
-}
-
-.blog-posts {
-    flex: 3;
-}
-
-.post {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.post h2 {
-    color: #007bff;
-}
-
-.read-more {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.sidebar {
-    flex: 1;
-    margin-left: 20px;
-}
-
-.sidebar h2 {
-    color: #007bff;
-}
-
-footer {
-    background: #007bff;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-} */
-
-
-
-/* styles.css */
-* {
-    box-sizing: border-box;
+/* General container and alignment */
+.container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    font-family: Arial, sans-serif;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  header h2{
+    margin-top: 7rem;
+  }
+  header input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Categories Section */
+  .categories {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .categories h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .categories-list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f7f7f7;
+    gap: 15px;
+    flex-wrap: wrap;
   }
   
-  .container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px;
-    text-align: center;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+  .categories-list button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  .blog-posts {
+  .categories-list button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Content Grid Layout */
+  .content-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  
+  /* Left Column: Side Content */
+  .side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .latest-posts, .trending-posts {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .latest-posts h2, .trending-posts h2 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .latest-posts .blog-post, .trending-posts .blog-post {
+    margin-bottom: 15px;
+  }
+  
+  /* Right Column: Blog Posts */
+  .blog-posts {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   
   .blog-post {
+    background-color: #fff;
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  @media (min-width: 600px) {
-    .blog-posts {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .blog-post h2 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
   }
   
+  .blog-post p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .blog-post a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .blog-post a:hover {
+    text-decoration: underline;
+  }
+  
+  .api_card_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Pagination */
   .pagination {
     display: flex;
     justify-content: center;
+    gap: 8px;
     margin-top: 20px;
   }
   
   .pagination button {
     padding: 10px;
-    margin: 0 5px;
     border: none;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  .pagination button:disabled {
-    background-color: #ccc;
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination button[disabled] {
+    background-color: #ddd;
+    color: #888;
     cursor: not-allowed;
   }
   
-  .api_card_img{
-    width: 100%;
-    height: 300px;
-}
-.api_card_img img{
-      object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }

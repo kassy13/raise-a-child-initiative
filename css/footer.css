@@ -29,7 +29,8 @@
   .footer-heading {
     color: var(--secondary);
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
 
   .feature-list {
@@ -106,3 +107,9 @@
   }
 
 
+  @media (max-width: 767px) {
+
+    .footer-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

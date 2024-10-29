@@ -25,39 +25,10 @@ body {
     --tertiary-dark: rgb(0, 134, 0);
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary);
-    height: 80px;
-    padding-block: 7px;
-    padding-inline: 3rem;
-    position: sticky;
-    top: 0;
-    z-index: 9999999;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-header nav ul a {
-
-    color: var(--tertiary);
-}
-
-nav h1 {
-    color: white;
-}
-
-
 
 /* Swiper styles */
 .swiper {
+    margin-top: 4.5rem;
     width: 100%;
     height: 90vh;
     position: relative;
@@ -71,7 +42,7 @@ nav h1 {
     content: "";
     z-index: 3;
     /* background-image: url(../images/nigeria3.png); */
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.741);
     background-size: cover;
     /* opacity:  0.3; */
 }
@@ -126,14 +97,21 @@ nav h1 {
     font-size: 26px;
     text-align: center;
 }
+.swipe-text a:hover{
+    background-color: darkblue;
+}
 
 .swipe-text h1 {
+    font-size: 60px;
     padding-inline: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    padding-top: 3rem;
     /* z-index: 99; */
 }
 
 .swipe-text a {
-    font-size: 20px;
+    font-size: 16px;
     background-color: var(--tertiary);
     color: white;
     border-radius: 5px;
@@ -144,7 +122,8 @@ nav h1 {
 
 /* Activities watch */
 .activities-wrapper {
-    padding: 60px 20px;
+    padding-block: 3rem;
+  padding-inline: 4rem;
     background-color: #f1f1f1;
 
 }
@@ -157,9 +136,7 @@ nav h1 {
 }
 
 .video_bg_1 {
-    /* flex: 1 1 50%; */
     width: 50%;
-    background-color: #3498db;
 }
 
 .video_bg_1 video {
@@ -181,14 +158,19 @@ nav h1 {
     justify-content: center;
     /* Center content vertically */
 }
-
-.section-header {
-    margin-bottom: 20px;
+.activities-section-header h3{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 1.3rem;
 }
+/* .section-header {
+   padding-block: 3rem 2rem;
+} */
 
 .section-header h3 {
-    font-size: 2.2rem;
-    color: #333;
+    font-size: 1.8rem;
+    color: rgb(83, 83, 83);
     line-height: 1.4;
 }
 
@@ -222,25 +204,30 @@ nav h1 {
 
 /* Reason section */
 .reason-area {
-    padding-block: 2rem;
+    padding-block: 3rem;
     background-color: rgb(243, 255, 243);
+    /* display: flex; */
+    padding-inline: 5rem;
+    
 }
 
-.section-header {
+.reason-section-header {
     text-align: center;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
 }
 
-.section-header h3 {
-    font-size: 2rem;
-    color: #333;
+.reason-section-header h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 28px;
+    padding-bottom: 1.4rem;
+    /* color: #333; */
 }
 
 .reasons-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
 }
 
 .reason-card {
@@ -249,7 +236,9 @@ nav h1 {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
+    /* width: 350px; */
+    width: 100%;
+
 
     padding: 20px;
 }
@@ -257,7 +246,7 @@ nav h1 {
 .reason-image {
     margin-bottom: 20px;
     width: 100%;
-    height: 150px;
+    height: 300px;
 
 }
 
@@ -299,15 +288,15 @@ nav h1 {
 
 /* Causes section */
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.latest-container {
+   padding-inline: 4rem;
+   padding-block: 3rem;
 }
 
 .section-title {
     font-size: 2.5rem;
-    color: #333;
+    /* color: #333; */
+    font-family: "Bricolage Grotesque", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -318,9 +307,11 @@ nav h1 {
 }
 
 .causes-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-block: 0 4rem;
+    gap:30px;
 }
 
 .cause-card {
@@ -328,8 +319,8 @@ nav h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 300px;
+    /* flex: 1; */
+    /* min-width: 300px; */
     display: flex;
     flex-direction: column;
 }
@@ -371,7 +362,22 @@ nav h1 {
     color: #333;
     margin-bottom: 10px;
 }
-
+.cause-readmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cause-readmore a{
+    padding: 12px;
+    padding-inline: 20px;
+    background-color: var(--tertiary);
+    color: white;
+    border-radius: 10px;
+    transition: all 1s ease-in;
+}
+.cause-readmore a:hover{
+    background-color: var(--tertiary-dark);
+}
 .donation-info {
     display: flex;
     justify-content: space-between;
@@ -383,6 +389,7 @@ nav h1 {
 .donor-info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -394,7 +401,7 @@ nav h1 {
 }
 
 .custom-progress-wrap {
-    margin-top: 10px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -430,29 +437,25 @@ nav h1 {
     background-position: center;
     position: relative;
     background-attachment: fixed;
-    /* background-color: #000000; */
     background-blend-mode: overlay;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 4rem;
 }
-/* .bg-section::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.422);
-    z-index: 1;
-} */
+.content-wrapper{
+    padding-block: 2rem ;
+    padding-inline: 4rem;
+}
+
 .overlay {
-    background-color: rgba(0, 0, 0, 0.687);
+    background-color: rgba(0, 0, 0, 0.903);
     /* Dark overlay on background */
     padding: 60px 0;
 }
 
-.content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 .content-row {
     display: flex;
@@ -470,8 +473,9 @@ nav h1 {
 
 .heading-20219 .title {
     font-size: 2.5rem;
-    color: #fff;
+    /* color: #fff !important; */
     line-height: 1.4;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .heading-20219 p {
@@ -525,6 +529,7 @@ nav h1 {
     padding: 50px 0;
     background-color: #f9f9f9;
     position: relative;
+    width: 100%;
 }
 
 .counter_bg {
@@ -532,6 +537,7 @@ nav h1 {
     padding: 70px 0;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .counter_bg.overlay::before {
@@ -600,15 +606,11 @@ nav h1 {
 /* General Styling for the Section */
 /* General Styling for the Section */
 .site-section {
-    padding: 50px 0;
+    padding-inline: 3rem;
+    padding-block: 3rem;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
+
   .heading-20219 .title {
     font-family: 'Cursive', sans-serif;
     color: #333;
@@ -618,18 +620,19 @@ nav h1 {
   }
   
   /* Event Layout */
-  .row {
+  .event-row {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
   
   .event-29191 {
     background-color: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
-    width: calc(50% - 10px); /* Adjusts to 50% width with margin */
+  /* width: 50%; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -640,7 +643,7 @@ nav h1 {
   
   .event-image img {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     border-radius: 8px;
     display: block;
     transition: opacity 0.3s ease;
@@ -725,7 +728,7 @@ nav h1 {
 /* Layout for Centering Content */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0 15px;
 }
 
@@ -950,7 +953,7 @@ nav h1 {
 /* CTA Section */
 .custom-container {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0 20px;
   }
 .cta-section {
@@ -980,11 +983,94 @@ nav h1 {
     background-color: var(--tertiary-dark) !important;
   }
 
+  .content-wrapper
+  {
+    padding-inline: 1.5rem;
+  }
 
 
 
   /* Small Screen Responsiveness */
   @media (max-width: 767px) {
+    /* swiper  */
+
+
+    .swiper {
+        width: 100%;
+      
+    }
+    
+    .swiper::before {
+
+        height: 100vh;
+       
+    }
+    
+ 
+    
+   
+    /* Previous Button */
+    .swiper-button-prev {
+        color: var(--tertiary) !important;
+    }
+    
+  
+    .swipe-text a:hover{
+        background-color: darkblue;
+    }
+    
+    .swipe-text h1 {
+        font-size: 30px;
+        padding-inline: 1.5rem;
+        
+    }
+    
+    /* reasons */ 
+    .reasons-grid {
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
+    .reason-area {
+     
+        padding-inline: 1.5rem;
+        
+    }
+    .reason-image {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    
+    }
+    /* activities */
+
+    .activities-row{
+        flex-direction: column;
+    }
+    .activities-info,.video_bg_1{
+    width: 100%;
+    }
+    /* Activities watch */
+.activities-wrapper {
+    padding-inline: 1.5rem;
+
+}
+.activities-section-header h3{
+
+    font-size: 22px;
+
+ 
+}
+    /* grid causes */
+    .latest-container {
+        padding-inline: 1.5rem;
+        
+     }
+    .causes-grid {
+        grid-template-columns: repeat(1,1fr);
+        gap:40px;
+    }
     .event-29191 {
       width: 100%; /* Full width on small screens */
     }
@@ -1004,7 +1090,19 @@ nav h1 {
         flex-direction: column;
         gap: 30px;
     }
-  }
+
+
+    .site-section {
+        padding-inline: 1.5rem;
+    }
+.event-row{
+    flex-direction: column;
+}
+.counter_row {
+    grid-template-columns: 1fr !important;
+}
+}
+
     
 
 

@@ -729,8 +729,8 @@ body {
 
 
 .volunteer-center-content {
-    background-color: #007bff;
-    padding-inline: 5rem;
+  
+    padding-inline: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1099,6 +1099,9 @@ body {
 }
 .counter_row {
     grid-template-columns: 1fr !important;
+}
+.volunteer-center-content{
+    padding-inline: 1.5rem;
 }
 }
 

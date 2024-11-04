@@ -729,7 +729,8 @@ body {
 
 
 .volunteer-center-content {
-    padding-inline: 3rem;
+    background-color: #007bff;
+    padding-inline: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;

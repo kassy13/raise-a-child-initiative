@@ -726,13 +726,11 @@ body {
 }
 
 /* Layout for Centering Content */
-.container {
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    padding: 0 15px;
-}
 
-.row.center-content {
+
+.volunteer-center-content {
+    padding-inline: 3rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 20px;

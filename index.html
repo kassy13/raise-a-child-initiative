@@ -692,13 +692,16 @@
         },
       });
 
-      const counters = document.querySelectorAll(".counter");
+    //   selecting the divs that has a class of counters 
+      const counters = document.querySelectorAll(".counter"); //4 counters
       const speed = 200;
 
       const animateCounters = () => {
+
         counters.forEach((counter) => {
+            //counter parameter is representing the current value
           const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
+            const target = +counter.getAttribute("data-target"); //300
             const count = +counter.innerText;
             console.log(count);
             const increment = target / speed;
